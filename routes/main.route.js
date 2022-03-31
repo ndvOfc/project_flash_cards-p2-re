@@ -1,5 +1,9 @@
-const router = require("express").Router();
+const async = require('hbs/lib/async');
 
-router.get("/", (req, res) => res.render("layout"));
+const router = require('express').Router();
+
+router.get('/', async (req, res) => { 
+  
+})
 
 module.exports = router;
