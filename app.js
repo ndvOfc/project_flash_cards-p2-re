@@ -6,7 +6,7 @@ const app = express();
 
 config(app);
 
-app.use("/", mainRouter);
+app.use('/', mainRouter);
 
 app.listen(3000, () => console.log("listen port 3000"));
 
