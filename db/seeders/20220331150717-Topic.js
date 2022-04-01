@@ -1,4 +1,3 @@
-'use strict';
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -28,12 +27,12 @@ module.exports = {
     await queryInterface.bulkInsert('Topics', arr, {});
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-  }
+  },
 };
